@@ -4,7 +4,7 @@
 			<div id="page-bgbtm">
 				<div id="content">
 
-					<h3>Page Not Found</h3>
+					<h3>Page Not Found. Please try a different page.</h3>
 
  
 				</div>
