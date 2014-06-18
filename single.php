@@ -4,6 +4,8 @@
 			<div id="page-bgbtm">
 				<div id="content">
 
+					
+
                    <?php
 
                     if(have_posts()):

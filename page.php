@@ -4,6 +4,8 @@
 			<div id="page-bgbtm">
 				<div id="content">
 
+					<div class="ajax"></div>
+
                    <?php
 
 

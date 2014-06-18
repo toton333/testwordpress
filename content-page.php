@@ -4,6 +4,8 @@
  ?>
 <div class="post">
 						<h2 class="title"><?php the_title(); ?></h2>
+						
+						
 						<div class="entry"> 
 						<a href="" class="image image-full">
 							<?php if(has_post_thumbnail()) : the_post_thumbnail('blog_image'); else: ?> 

@@ -8,6 +8,7 @@ $thumb_showcase = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 
 	<div class="post">
 						<h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						
+						
 							
 						<div class="entry"> 
 						<a href="<?php echo $thumb_showcase[0] ?>" class="image image-full">

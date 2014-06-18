@@ -40,6 +40,7 @@ echo ' | ' . sprintf( __( 'Page %s', 'testwordpress' ), max( $paged, $page ) );
 			</div>
 		</div>
 	</div>
+	
 	<!-- end #header -->
 	
 		<?php

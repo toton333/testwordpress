@@ -73,6 +73,8 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
  */
 function shape_scripts() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array('jquery'), '20120206', true );
+
  
 }
 add_action( 'wp_enqueue_scripts', 'shape_scripts' );
@@ -152,3 +154,15 @@ include_once( 'option-tree/assets/theme-mode/demo-theme-options.php' );
 
 include_once( 'option-tree/assets/theme-mode/demo-meta-boxes.php' );
 
+
+
+/* ajax test */
+
+function my_ajax(){
+
+$text = 'hello world';
+die($text);
+}
+
+add_action('wp_ajax_babula', 'my_ajax');
+add_action('wp_ajax_nopriv_babula', 'my_ajax');
