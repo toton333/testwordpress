@@ -39,6 +39,19 @@ Template Name: Front Page
 
                  
 				<?php endwhile; endif; wp_reset_postdata(); ?>
+
+
+
+                <div id="ajax-div">
+				<form id="ajax-form" action="#" method="post">
+					<label for="post_id"><b>Please insert post id here :</b></label><br/>
+					<input type="text" name="post_id" id="post_id"><br/>
+					<input type="submit" value="Get Post Title">
+
+				</form>
+			    </div>
+
+
 					
 					<div style="clear: both;">&nbsp;</div>
 				</div>

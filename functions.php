@@ -156,13 +156,31 @@ include_once( 'option-tree/assets/theme-mode/demo-meta-boxes.php' );
 
 
 
-/* ajax test */
+/*  ajax form submit   */
 
-function my_ajax(){
+function ajax_function(){
 
-$text = 'hello world';
-die($text);
+    if(isset($_POST['postID'])){
+         
+         $postID = $_POST['postID'];
+         if(!empty($postID)){
+            
+              $postdata = get_post($postID);
+
+              $posttitle = $postdata->post_title;
+
+              echo $posttitle;
+            
+         }else{
+               
+               echo 'Please insert a post id.';
+
+         }
+
+    }
+
+    die();
 }
 
-add_action('wp_ajax_babula', 'my_ajax');
-add_action('wp_ajax_nopriv_babula', 'my_ajax');
+add_action('wp_ajax_nopriv_my_post', 'ajax_function');
+add_action('wp_ajax_my_post', 'ajax_function');
