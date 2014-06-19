@@ -50,6 +50,24 @@ Template Name: Front Page
 
 				</form>
 			    </div>
+			    <hr>
+
+			    <?php
+			     $comments = get_comments();
+                 
+                 foreach ($comments as $comment) {
+                 	?>
+                 	<div style="width:650; background:grey;">
+                 		
+                          <?php echo get_avatar($comment->comment_author_email, 40); ?> 
+                          <a style="color:cyan;" href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo $comment->comment_author, ' : '; ?></a>
+                          <span style="color:white;"><?php echo $comment->comment_content; ?></span>
+                 	</div>
+
+
+                 	<?php
+                 }
+			     ?>
 
 
 					
