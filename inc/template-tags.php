@@ -61,7 +61,7 @@ endif; // ends check for testwordpress_comment()
 
 
 
-/*----------- for next/previous link of posts/pages, copied from testwordpress--------*/
+/*----------- for next/previous link of posts/pages, copied from experiment's template-tags.php--------*/
 
 if ( ! function_exists( 'testwordpress_post_nav' ) ) :
 /**
